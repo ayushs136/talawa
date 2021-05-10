@@ -18,10 +18,6 @@ class UIData {
   static const String switchOrgPage = "/switchOrgPage";
   static const String profilePage = "/profilePage";
 
-
-
-  
-
   //strings
   static const String appName = "Talawa";
 
@@ -45,16 +41,17 @@ class UIData {
   static const String timelineImage = "$imageDir/timeline.jpeg";
   static const String verifyImage = "$imageDir/verification.jpg";
   static const String splashScreen = "$imageDir/splashscreen.jpg";
-  static const String talawaLogo = "$imageDir/talawaLogo.png";
+  static const String talawaLogo = "$imageDir/talawaLogo-noBg.png";
   static const String cloud1 = "$imageDir/cloud1.jpg";
   static const String talawaLogoDark = "$imageDir/talawaLogo-dark.png";
   static const String quitoBackground = "$imageDir/quitoBackground.jpg";
 
   //gneric
-  static const String coming_soon = "Coming Soon";
+  static const String comingsoon = "Coming Soon";
 
+  // ignore: constant_identifier_names
   static const MaterialColor ui_kit_color = Colors.grey;
-  static const LightGrey = Color.fromRGBO(242, 242, 242, 1);
+  static const lightGrey = Color.fromRGBO(242, 242, 242, 1);
 
   // static const Color quitoThemeColor = MaterialColor(0xFF7e1946, {50:Color.fromRGBO(126,25,70, .1),
   //   100:Color.fromRGBO(126,25,70, .2),
@@ -68,6 +65,8 @@ class UIData {
   //   900:Color.fromRGBO(126,25,70, 1)});
   static const Color primaryColor = Colors.orange;
   static const Color secondaryColor = Colors.blueAccent;
+  static const Color toastErrorColor = Colors.red;
+  static const Color toastSucessColor = Colors.green;
 
 //colors
   static List<Color> kitGradients = [
@@ -83,10 +82,10 @@ class UIData {
   ];
 
   //randomcolor
-  static final Random _random = new Random();
+  static final Random _random = Random();
 
   /// Returns a random color.
   static Color next() {
-    return new Color(0xFF000000 + _random.nextInt(0x00FFFFFF));
+    return Color(0xFF000000 + _random.nextInt(0x00FFFFFF));
   }
 }
